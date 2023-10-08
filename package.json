@@ -1,21 +1,35 @@
 {
-  "name": "code",
+  "name": "demo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@better-scroll/core": "^2.5.1",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "antd": "^5.9.4",
+    "antd-mobile": "^5.32.4",
+    "antd-mobile-icons": "^0.3.0",
+    "axios": "^1.5.1",
+    "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.16.0",
     "react-scripts": "5.0.1",
+    "react-transition-group": "^4.4.5",
+    "styled-components": "^6.0.8",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "craco eject",
+    "lint": "npx eslint --fix",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "npx eslint --fix"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +48,29 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@craco/craco": "^7.1.0",
+    "@eslint/create-config": "^0.4.6",
+    "@iconify/json": "^2.2.118",
+    "@iconify/react": "^4.1.1",
+    "@svgr/core": "^8.1.0",
+    "@svgr/plugin-jsx": "^8.1.0",
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "husky": "^8.0.3",
+    "husky-init": "^8.0.0",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3",
+    "semver": "^7.5.4",
+    "tailwindcss": "^3.3.3",
+    "unplugin-auto-import": "^0.16.6",
+    "unplugin-icons": "^0.17.0"
   }
 }
