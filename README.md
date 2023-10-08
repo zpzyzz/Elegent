@@ -20,3 +20,8 @@
 
 5. 仓库提交
 git status
+git add .
+git commit -m '提交的信息'
+git remote add origin 地址
+git remote -v 查看
+git push origin master -u -f

@@ -21,8 +21,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "craco-env NODE_ENV=development craco start",
-    "build": "craco-env NODE_ENV=production craco build",
+    "start": "cross-env NODE_ENV=development craco start",
+    "build": "cross-env NODE_ENV=production craco build",
     "test": "craco test",
     "eject": "craco eject",
     "lint": "npx eslint --fix",
